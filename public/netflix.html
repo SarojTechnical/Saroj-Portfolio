@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="public/images/Netflix-favicon.ico">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-size: cover;
+            width: 90%;
+            background-image: url('https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg');
+        }
+
+        .shade {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 112%;
+            height: 700px;
+            margin-left: -10px;
+            margin-top: -10px;
+            margin-bottom: -10px;
+
+        }
+
+        .brand-title {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        header {
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            font-family: arial;
+        }
+
+        .btn-signin {
+            background-color: red;
+            color: white;
+            padding: 7px;
+            border-radius: 5px;
+            margin-left: 20px;
+            display: inline-block;
+            width: 65px;
+        }
+
+        .language-set {
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        section {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            text-align: center;
+            padding: 20px;
+            font-family: arial;
+            margin-bottom: 40px;
+
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .sub-title {
+            font-size: 30px;
+
+        }
+
+        .sub-title-1 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .email {
+            border: 1px solid gray;
+            padding: 15px;
+            background-color: rgb(41, 39, 39);
+            width: 300px;
+            display: inline-block;
+            text-align: left;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+
+        .start {
+            border: 1px solid gray;
+            background-color: red;
+            font-weight: bold;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 180px;
+        }
+
+        .buttom-footer~span {
+            display: block;
+
+        }
+
+        .language {
+            border: 1px solid gray;
+            height: 40px;
+            width: 120px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            height: 300px;
+            width: 111.3%;
+            padding: 50px;
+            background-color: rgb(65, 62, 62);
+            color: wheat;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shade">
+        <header>
+            <div>
+                <span class="brand-title">NETFLIX</span>
+            </div>
+            <div>
+                <span class="bi bi-globe2"></span>
+                <span>Language</span>
+                <span class="bi bi-caret-down-fill"></span>
+                <span class="btn-signin">sign in</span>
+
+            </div>
+        </header>
+        <section>
+            <div>
+                <div class="title">Unlimited movies, TV shows and more</div>
+                <div class="sub-title">Watch anywhere. Cancel anytime</div>
+                <div class="sub-title-1">Ready to watch? Enter your email to create or restart your membership.</div>
+                <main>
+                    <span class="email">Email address</span>
+                    <span class="start">Get Started<span class="bi bi-chevron-right"></span></span>
+                </main>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+<footer>
+    <div >
+        <div class="buttom-footer"></div>
+        <span> FAQ</span>
+        <span>Investor Relations</span>
+        <span>Privacy</span>
+        <span>Speed Test</span>
+    </div>
+    <div>
+        <div class="buttom-footer"></div>
+        <span>Help Center</span>
+        <span>Jobs</span>
+        <span>Cookie Preferences</span>
+        <span>Legal Notices</span>
+    </div>
+    <div>
+        <div class="buttom-footer"></div>
+        <span>Account</span>
+        <span>Ways to Watch</span>
+        <span>corporate information</span>
+        <span>Only on Netflix</span>
+    </div>
+    <div>
+        <div class="buttom-footer"></div>
+        <span>Media Center</span>
+        <span>Terms Of Use</span>
+        <span>Contact Us</span>
+    </div>
+    <div class="language">
+        <span class="bi bi-translate"></span>
+        <span>English</span>
+        <span class="bi bi-caret-down-fill"></span>
+    </div>
+    </div>
+</footer>
+</html>
