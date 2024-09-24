@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Click Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwZ7ZJSoDutcVpPgSBRV9WyNQga3NiOmoLg&s">
     <style>
         header{
             display:flex;
@@ -39,8 +40,8 @@
             text-align: center;
             font-size: 15px;
         }
-        section{
-            height: 800px;
+        .first-section{
+            height: 600px;
         }
         footer{
             display: grid;
@@ -49,6 +50,7 @@
             font-family: Arial;
             background-color: black;
             color: white;
+            height: 300px;
         }
         .footer-brand-name{
            font-size:25px;
@@ -123,6 +125,59 @@
             margin-top: 150px;
             
         }
+        .third-section{
+            display:flex ;
+            height: 200px;
+            margin-bottom: 500px;
+            margin-top: 200px;
+            justify-content: center;
+        }
+       .title{
+        font-size: 15px;
+        font-family: arial;
+        color: gray;
+        margin-bottom: 10px;
+       }
+       .sub-title{
+        font-size: 18px;
+        font-family: arial;
+        font-weight: bold;
+        margin-bottom: 10px;
+       }
+       .bi-star-fill{
+        color: gold;
+       }
+       .second-card{
+        border: 1px solid gray;
+        width: 330px;
+        padding: 30px;
+        font-family: arial;
+        margin-right: 20px;
+        
+       }
+       .card-pic{
+        float: left;
+        padding-right: 20px;
+       }
+       .card-body{
+              clear: left;
+              color: gray;
+              padding-top: 15px;
+       }
+       .review-card{
+            display: flex;
+       }
+       .second-section{
+            background-image: url("https://yevgenysim-turkey.github.io/shopper/assets/img/covers/cover-4.jpg");
+            width: 99%;
+            height: 600px;
+            background-size: cover;
+            margin-top: 500px;
+        }
+        .brand-name{
+            margin-right: 30px;
+        }
+       
     </style>
 </head>
 <body>
@@ -156,10 +211,10 @@
             <span class="bi bi-lightning-fill"></span>
         </marquee>
     </article>
-    <section>
+    <section class="first-section">
         <main>
             <div class="women-fashion">
-                <div class="card">
+                <div class="first-card">
                     <div class="card-title">
                         Women
                   </div>
@@ -169,7 +224,7 @@
                 </div>
             </div>
             <div class="men-fashion">
-                <div class="card">
+                <div class="first-card">
                     <div class="card-title">
                         Men
                   </div>
@@ -179,7 +234,7 @@
                 </div>
             </div>
             <div class="kids-fashion">
-                <div class="card">
+                <div class="first-card">
                     <div class="card-title">
                         Kids
                   </div>
@@ -189,6 +244,129 @@
                 </div>
             </div>
         </main>
+    </section>
+    <section class="second-section">
+        <div style="text-align: center; padding-top: 100px; margin-left: 250px;">
+            <div style="font-size: 40px; font-family: arial; font-weight: bold;">
+                Get -50% from<br>
+                <span style="margin-left: 93px; ">Summer Collection</span>
+            </div>
+            <div style="margin-top: 50px; margin-left: 115px;">
+               <div style="font-size: 50px; font-weight: bold; color: lightcoral; margin-right: 45px;">
+                <span>365</span>
+                <span>:</span>
+                <span>12</span>
+                <span>:</span>
+                <span>25</span>
+                <span>:</span>
+                <span>06</span>
+               </div>
+               <div style="font-size: 20px; color: black; ">
+                <span style="margin-left: 10px;">Days</span>
+                <span style="margin-left: 50px; ">Hours</span>
+                <span style="margin-left: 25px;">Minutes</span>
+                <span style="margin-left: 30px;">Seconds</span>
+               </div>
+            </div>
+            <div style="margin-right: 220px; margin-top: 50px; margin-left: 70px;">
+              <button style="font-size: 20px; padding: 15px; background-color: black; color: white;width: 150px;">
+                <span>Shopnow</span>
+                <span class="bi bi-arrow-right-short"></span>
+              </button>
+            </div>
+        </div>
+    </section>
+    <section class="third-section" style="margin-bottom: 300px;">
+       <div>
+        <div style="margin-bottom: 80px;">
+            <div style="font-size: 20px;color: gray; font-family: arial; text-align: center;margin-bottom: 20px;">What buyers say</div>
+        <div style="font-size: 32px; font-weight: bold; font-family: arial; text-align: center;">Latest buyers Reviews</div>
+        </div>
+        <div class="review-card">
+            <div class="second-card">
+                <div>
+                    <img src="./images/T-shirt.png" class="card-pic">
+                    <div class="title">T-shirts</div>
+                    <div class="sub-title">Oversized Print T-shirt</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star"></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>A paragraph is a group of sentences that work together to support a main idea. Paragraphs are a vital part of writing because they help organize ideas and guide the reader through a piece of writing.
+                    </p>
+                    <p>darrell Baker 18 may 2019</p>
+                </div>
+            </div>
+            <div class="second-card">
+                <div>
+                    <img src="./images/Scot.png" class="card-pic">
+                    <div class="title">Dresses</div>
+                    <div class="sub-title">Cotton print Dresses</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star"></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>A paragraph is a group of sentences that work together to support a main idea. Paragraphs are a vital part of writing because they help organize ideas and guide the reader through a piece of writing.
+                    </p>
+                    <p>darrell Baker 18 may 2019</p>
+                </div>
+            </div>
+            <div class="second-card">
+                <div>
+                    <img src="./images/Shoes.png" class="card-pic">
+                    <div class="title">Shoes</div>
+                    <div class="sub-title">Low top Snekers</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star"></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>A paragraph is a group of sentences that work together to support a main idea. Paragraphs are a vital part of writing because they help organize ideas and guide the reader through a piece of writing.
+                    </p>
+                    <p>darrell Baker 18 may 2019</p>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class=".fourth-section">
+        <div style="padding: 100px;">
+            <div>
+                <div style="font-size: 30px; font-family: arial; font-weight: bold; text-align: center; margin-bottom: 15px;">@shopper</div>
+                <div style="font-size: 20px; font-family: arial; color: gray; text-align: center; margin-bottom: 60px;">Appear, dry there darkness they're seas, dry waters.</div>
+             </div>
+             <div style="margin-left: 150px;">
+               <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/products/product-16.jpg" height="180px" width="180px">
+               <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/products/product-17.jpg" height="180px" width="180px">
+               <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/products/product-18.jpg" height="180px" width="180px">
+               <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/products/product-19.jpg" height="180px" width="180px">
+               <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/products/product-20.jpg" height="180px" width="180px">
+               <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/products/product-21.jpg" height="180px" width="180px">
+             </div>
+             <div style="margin-left: 150px; margin-top: 50px;">
+                <span  class="brand-name"><img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/mango.svg"  width="130px" height="30px"></span>
+                <span  class="brand-name"><img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/zara.svg"   width="130px" height="30px" ></span>
+                <span  class="brand-name"><img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/reebok.svg"  width="130px" height="30px"></span>
+                <span  class="brand-name"><img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/asos.svg"    width="130px" height="30px"></span>
+                <span  class="brand-name"><img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/stradivarius.svg"  width="130px" height="30px"></span>
+                <span  class="brand-name"><img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/adidas.svg"  width="130px" height="30px"></span>
+                <span  class="brand-name"><img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/bershka.svg"  width="130px" height="30px"></span>
+             </div>
+        </div>
     </section>
     <footer>
         <div>
