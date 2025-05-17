@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click Shop</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Shopper Template</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwZ7ZJSoDutcVpPgSBRV9WyNQga3NiOmoLg&s">
     <style>
+       @media screen and (orientation:landscape) {
         header{
             display:flex;
             justify-content: space-between;
@@ -70,7 +71,7 @@
                  margin-right: 10px;
         }
         .women-fashion{
-            background-image: url(./images/women-fashion.jpg);
+            background-image: url(public/images/women-fashion.jpg);
             background-size: cover;
             display:flex;
             justify-content:center;
@@ -78,7 +79,7 @@
             opacity: 0.5;
         }
         .men-fashion{
-            background-image: url(./images/men-fashion.jpg);
+            background-image: url(public/images/men-fashion.jpg);
             background-size: cover;
             display:flex;
             justify-content:center;
@@ -86,7 +87,7 @@
             opacity: 0.5;
         }
         .kids-fashion{
-            background-image: url(./images/kids-fashion.jpg);
+            background-image: url(public/images/kids-fashion.jpg);
             background-size: cover;
             display:flex;
             justify-content:center;
@@ -177,6 +178,22 @@
         .brand-name{
             margin-right: 30px;
         }
+       }
+       @media screen and (orientation:portrait) {
+         header {
+           display: flex;
+           justify-content: space-between;
+           }
+          nav, aside {
+          display: none;
+           }
+          .bi-justify {
+         display: inline;
+           }
+       }
+       button a{
+        text-decoration: none;
+       }
        
     </style>
 </head>
@@ -187,7 +204,7 @@
         </div>
         <div>
            <nav>
-            <span>Home</span>
+            <span><a href="https://www.flipkart.com/">Home</a></span>
            <span>Catalog</span>
            <span>Shop</span>
            <span>Pages</span>
@@ -219,7 +236,7 @@
                         Women
                   </div>
                   <div class="card-footer">
-                      <button> Shop women<span class="bi bi-arrow-right"></span></button>
+                      <button> <a href="https://www.flipkart.com/clothing-and-accessories/~cs-aerg0b0afc/pr?sid=clo&collection-tab-name=KK%2CSets%2CDM%2CSarees&fm=neo%2Fmerchandising&iid=M_1a1214ea-c8ab-4aba-8c9e-34e02c49569a_1_372UD5BXDFYS_MC.HQXTE43PO8HC&otracker=hp_rich_navigation_3_1.navigationCard.RICH_NAVIGATION_Fashion~Women%2BEthnic_HQXTE43PO8HC&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L1_view-all&cid=HQXTE43PO8HC">Shop women</a><span class="bi bi-arrow-right"></span></button>
                   </div>
                 </div>
             </div>
@@ -229,7 +246,7 @@
                         Men
                   </div>
                   <div class="card-footer">
-                       <button>Shop men<span class="bi bi-arrow-right"></span></button>
+                       <button><a href="https://www.flipkart.com/clothing-and-accessories/topwear/tshirt/men-tshirt/pr?sid=clo,ash,ank,edy&otracker=categorytree&otracker=nmenu_sub_Men_0_T-Shirts">Shop men</a><span class="bi bi-arrow-right"></span></button>
                   </div>
                 </div>
             </div>
@@ -239,7 +256,7 @@
                         Kids
                   </div>
                   <div class="card-footer">
-                       <button>Shop kids<span class="bi bi-arrow-right"></span></button>
+                       <button><a href="https://www.flipkart.com/clothing-and-accessories/pr?sid=clo&otracker=categorytree&p%5B%5D=facets.ideal_for%255B%255D%3DGirls&p%5B%5D=facets.ideal_for%255B%255D%3DBoys&p%5B%5D=facets.ideal_for%255B%255D%3DBoys%2B%2526%2BGirls&p%5B%5D=facets.ideal_for%255B%255D%3DBaby%2BBoys%2B%2526%2BBaby%2BGirls&p%5B%5D=facets.ideal_for%255B%255D%3DBaby%2BBoys&p%5B%5D=facets.ideal_for%255B%255D%3DBaby%2BGirls&otracker=nmenu_sub_Baby%20%26%20Kids_0_Kids%20Clothing">Shop kids</a><span class="bi bi-arrow-right"></span></button>
                   </div>
                 </div>
             </div>
@@ -285,7 +302,7 @@
         <div class="review-card">
             <div class="second-card">
                 <div>
-                    <img src="./images/T-shirt.png" class="card-pic">
+                    <img src="public/images/T-shirt.png" class="card-pic">
                     <div class="title">T-shirts</div>
                     <div class="sub-title">Oversized Print T-shirt</div>
                     <div>
@@ -304,7 +321,7 @@
             </div>
             <div class="second-card">
                 <div>
-                    <img src="./images/Scot.png" class="card-pic">
+                    <img src="public/images/Scot.png" class="card-pic">
                     <div class="title">Dresses</div>
                     <div class="sub-title">Cotton print Dresses</div>
                     <div>
@@ -323,7 +340,7 @@
             </div>
             <div class="second-card">
                 <div>
-                    <img src="./images/Shoes.png" class="card-pic">
+                    <img src="public/images/Shoes.png" class="card-pic">
                     <div class="title">Shoes</div>
                     <div class="sub-title">Low top Snekers</div>
                     <div>
@@ -372,7 +389,7 @@
         <div>
             <div class="footer-brand-name">Shopper.</div>
             <aside>
-                <span class="bi bi-facebook"></span>
+                <a href="https://www.facebook.com/"><span class="bi bi-facebook"></span></a>
                 <span class="bi bi-youtube"></span>
                 <span class="bi bi-twitter"></span>
                 <span class="bi bi-instagram"></span>
@@ -401,7 +418,7 @@
         </div>
         <div>
             <div class="footer-title">CONTACT</div>
-            <span>1-202-555-0105</span>
+            <a href="tel:1-202-555-0105">1-202-555-0105<span></span></a>
             <span>1-202-555-0106</span>
             <span>help@shopper.com</span>
         </div>
