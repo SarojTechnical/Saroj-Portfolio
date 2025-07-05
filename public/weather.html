@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="https://tse3.mm.bing.net/th/id/OIP.O87sCtySjG3M-EXp7OY9dgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+    <style>
+        .parent-table{
+                background-image: url(../public/images/weather-background-image.jpg);
+                background-size: cover;
+                border-radius: 10px;
+                font-size: 20px;
+                height: 600px;
+        }
+        .city-name{
+            font-size: 30px;
+            color:white;
+            text-shadow: 1px 1px 1px black;
+            font-family: Arial;
+            padding: 20px;
+        }
+        .city-name p{
+            font-size: 17px;
+            text-shadow: 1px 1px 1px black;
+        }
+        .icons{
+            font-size: 20px;
+            color: white;
+            padding: 20px;
+            margin-right: 100px;
+            
+        }
+        .unit,.bi-water{
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial;
+            color:yellow;
+            text-shadow: 1px 1px 1px black;
+        }
+        .unit{
+            margin-left: 30px;
+        }
+        .cf{
+            font-size: 25px;
+            font-family: Arial;
+            color:white;
+            margin-left: 40px;
+            padding: 15px;
+        }
+        .cf-w{
+            font-size: 18px;
+            font-family: Arial;
+            color:white;
+            margin-left: 400px;
+            margin-top: 30px;
+        }
+        .main{
+            display:flex;
+            margin-left: 20px;
+        }
+        .child-table{
+            margin-left: 30px;
+            width:100%;
+        }
+        .parent-table table{
+            color: white;
+            font-family: arial;
+        }
+        .slider{
+            width: 100%;
+        }
+        .bi-cloud-lightning-rain{
+             color: yellow;
+             font-size: 60px;
+             
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" height="400px" class="parent-table">
+          <tr>
+             <td class="city-name">Bhubaneswar<p>upadated a few minutes ago</p></td>
+              <td  class="icons" colspan="4" align="right" valign="top">
+                    <span class="bi bi-share-fill"></span>
+                    <span class="bi bi-three-dots"></span>
+                </td>
+            </tr>  
+            <tr class="main">
+                <td><span class="bi bi-water"></span></td>
+                <td class="unit" colspan="">24</td><br>
+                <td class="cf">&deg;C<br>
+                    <hr color="black" width="10">
+                    &nbsp;F
+                </td>
+                <td class="cf">30&deg;<br><br>
+                    23&deg;
+                </td>
+                <td class="cf-w">Wind: 12 KMPH<br>
+                   <p> Humidity: 83%</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="cf-w" colspan="5">
+                    HAZE - Tue 12, 8:36 am
+                </td>
+            </tr>
+           <tr>
+            <td>
+                <table width="100%" style="color: white; margin-left:20px;">
+             <tr align="center">
+                <td align="left">9 AM</td>
+                <td>12 PM</td>
+                <td>3 PM</td>
+                <td>6 PM</td>
+                <td>9 PM</td>
+                <td>12 AM</td>
+                <td>3 AM</td>
+                <td align="right">6 AM</td>
+            </tr>
+            <tr>
+                <td colspan="8">
+                    <input type="range" min="1" max="100" value="10" class="slider">
+                </td>
+            </tr>
+           </table>
+            </td>
+           </tr>
+           <tr>
+            <td>
+                <table  cellpadding="5" cellspacing="5"  class="child-table">
+                    <tr height="200px" bgcolor="gray">
+                        <td align="center" valign="top">
+                            Tue 27<br><br>
+                            <span class="bi bi-cloud-lightning-rain"></span><br><br>
+                            29&deg;<br>
+                            26&deg;
+                        </td>
+                        <td align="center" valign="top">
+                            Wed 28<br><br>
+                            <span class="bi bi-cloud-lightning-rain"></span><br><br>
+                            29&deg;<br>
+                            26&deg;
+                        </td>
+                        <td align="center" valign="top">
+                            Thurs 29<br><br>
+                            <span class="bi bi-cloud-lightning-rain"></span><br><br>
+                            29&deg;<br>
+                            26&deg;
+                        </td>
+                        <td align="center" valign="top">
+                            Fri 30<br><br>
+                            <span class="bi bi-cloud-lightning-rain"></span><br><br>
+                            29&deg;<br>
+                            26&deg;
+                        </td>
+                        <td align="center" valign="top">
+                            Sat 1<br><br>
+                            <span class="bi bi-cloud-lightning-rain"></span><br><br>
+                            29&deg;<br>
+                            26&deg;
+                        </td>
+                        <td align="center" valign="top">
+                            Sun 2<br><br>
+                            <span class="bi bi-cloud-lightning-rain"></span><br><br>
+                            29&deg;<br>
+                            26&deg;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+           </tr>
+    </table>
+</body>
+</html>
