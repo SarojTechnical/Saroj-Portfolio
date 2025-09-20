@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saroj-Portfolio</title>
     <link href="public/images/s.ico" rel="shortcut icon">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -24,12 +22,12 @@
         <div class="name">portfolio</div>
       </div>
       <div class="home">
-        <span>Home</span>
-        <span>About</span>
-        <span><a href="public/docs/Frontend Developer Resume.pdf" target="_blank">Resume</a></span>
-        <span><a href="#skill">Skill</a></span>
-        <span>Portfolio</span>
-        <span><a href="#contact">Contact</a></span>
+        <span><a class="home-span" href="#main">Home</a></span>
+        <span><a  class="home-span" href="#education">Education</a></span>
+        <span  class="home-span">About</span>
+        <span><a  class="home-span" href="public/docs/Frontend Developer Resume.pdf" target="_blank">Resume</a></span>
+        <span><a  class="home-span" href="#skill">Skill</a></span>
+        <span><a  class="home-span" href="#contact">Contact</a></span>
       </div>
       <div class="social-media">
         <a
@@ -52,9 +50,11 @@
           target="_blank"
           class="bi bi-linkedin"
         ></a>
+         
       </div>
+      <span class="bi bi-justify "></span>
     </header>
-    <section class="main">
+    <section class="main" id="main">
       <div class="my_details">
         <div class="name2">Hi, I'm <span class="my_name">Saroj</span></div>
         <div class="designation">UI Developer</div>
@@ -64,8 +64,8 @@
           amazing together.
         </div>
         <div class="btn">
-          <span class="btn-h"><a href="#contact">Hire Me</a></span>
-          <span class="btn-v">View Work</span>
+          <span class="btn btn-primary"><a href="#contact">Hire Me</a></span>
+          <span class="btn btn-dark ms-3"><a href="">View Work</a></span>
         </div>
         <div class="social-media2">
           <span class="social-media2-span"
@@ -100,7 +100,33 @@
       </div>
       <div><img src="public/images/Saroj.jpg" class="profile-pic" /></div>
     </section>
-    <section id="skill">
+    <section id="education" class="education-section">
+      <h2 class="education">Education</h2>
+      <div class="education-div justify-content-around mt-5">
+        <div class="education-card">
+          <h3 class="year mb-3">2018-2019</h3>
+          <h3>School</h3>
+          <h4 class="mt-2 mb-3 text-secondary">RC High School,Nuagan</h4>
+          <p>Percentage: 81.16%</p>
+          
+        </div>
+        <div class="education-card">
+          <h3 class="year mb-3">2019-2021</h3>
+          <h3>Higher Secondary School</h3>
+          <h4 class="mt-2 mb-3 text-secondary">Jhadeswar Higher Secondary School</h4>
+          <p>Percentage: 88.16%</p>
+          
+        </div>
+        <div class="education-card">
+          <h3 class="year mb-3">2021-2025</h3>
+          <h3>Bachelor of Technology</h3>
+          <h4 class="mt-2 mb-3 text-secondary">DRIEMS UNIVERSITY</h4>
+          <p>Percentage: 80.18%</p>
+          
+        </div>
+      </div>
+    </section>
+    <section id="skill" class="skill-section">
         <span class="my-skills">My <span style="background: linear-gradient(90deg,rgba(0, 123, 255, 1) 0%, rgba(104, 83, 130, 1) 100%);background-clip: text;color: transparent;">Skills</span></span>
       <div class="skill">
         <div class="technical">
@@ -213,7 +239,7 @@
            </div>
             </div>
          </div>
-          <div class="message" id="contact">
+          <div class="message " id="contact">
             <span style="font-size: 25px; font-weight: bold; ">Send Me a Message</span>
             <form action="">
              <label for="">Your Name</label>

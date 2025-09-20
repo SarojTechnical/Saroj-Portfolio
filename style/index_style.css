@@ -1,3 +1,168 @@
+@media screen and (orientation: landscape){
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bi-justify{
+    display: none;
+  }
+  .main{
+    display:flex ;
+    
+  }
+  /*Education */
+  .education{
+    margin-left: 700px;
+    
+  }
+  .education-section{
+     margin-top: 100px;
+     
+}
+  .education-div{
+  display: flex;
+}
+.education-card{
+  width: 450px;
+}
+/*Skill */
+.skill{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.my-skills{
+   margin-left: 700px; 
+}
+/* tools */
+.tools{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+ }
+ /* footer */
+ .footer-header{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-bottom: 5px solid rgb(151, 151, 239);
+  margin-left: 700px;
+}
+ .footer{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 50px;
+}
+.contact{
+  margin-left: 20px;
+}
+.message{
+  margin-bottom: 100px;
+}
+.send-message{
+  width: 700px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(76, 76, 199);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+}
+
+@media screen and (orientation: portrait) {
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .home,.social-media{
+    display: none;
+  }
+  .bi-justify{
+    display: inline;
+  }
+  .main{
+    display:block ;
+    
+  }
+  .my_name{
+  color: red;
+  }
+  /*Education */
+  .education{
+    margin-left: 80px;
+    
+  }
+  .education-section{
+    margin-top: 250px;
+  }
+  .education-div{
+  display: block;
+}
+.education-card{
+  margin-top: 20px;
+  width: 350px;
+  margin-left: 20px;
+}
+/*Skill */
+.skill{
+  width: 100px;
+ 
+  
+}
+.my-skills{
+   margin-left: 100px; 
+}
+/* tools */
+.tools{
+  color: white;
+  display: block;
+  margin-left: 80px;
+  
+ }
+ .tools-card{
+  margin-bottom: 20px;
+ }
+/* footer */
+ .footer-header{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-bottom: 5px solid rgb(151, 151, 239);
+  margin-left: 100px;
+ }
+ .footer{
+  display: block;
+  
+  color: white;
+  margin-top: 50px;
+}
+.contact{
+  margin-left: 20px;
+}
+.message{
+  margin-top: 50px;
+  margin-left: 50p;
+}
+.send-message{
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(76, 76, 199);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+}
+
+
+/* header */
 .container-fluid{
     background-color: rgb(19, 24, 50);
     
@@ -5,6 +170,7 @@
 a{
   color: white;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -31,14 +197,19 @@ a{
   padding: 10px;
   margin-left: 150px;
 }
+.home-span:hover{
+ 
+  border-bottom: 3px solid rgb(90, 90, 176);
+}
 .home span {
   margin-left: 20px;
 }
-.social-media a {
+.social-media a,.bi-justify{
   margin-right: 20px;
   margin-top: 20px;
   color:darkblue;
 }
+
 .social-media {
   margin-top: 10px;
   
@@ -47,7 +218,6 @@ a{
 .main {
   padding-top: 200px;
   height: 100vh;
-  display: flex;
   justify-content: space-between;
 }
 .my_details{
@@ -77,7 +247,7 @@ a{
     margin-top: 40px;
     
 }
-.btn-h{
+.btn-primary{
 background: linear-gradient(90deg,rgba(14, 165, 233, 1) 0%, rgba(126, 34, 206, 1) 82%);
     padding: 15px;
     padding-left: 30px;
@@ -85,15 +255,16 @@ background: linear-gradient(90deg,rgba(14, 165, 233, 1) 0%, rgba(126, 34, 206, 1
     border-radius: 30px;
     color: white;
     margin-left: -20px;
+     width: 150px;
 }
-.btn-v{
+.btn-dark{
     padding: 15px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 30px;
     color: rgb(157, 157, 249); 
     border: 1px solid rgb(129, 146, 231);
-    margin-left: 20px;
+    width: 150px;
 }
 .social-media2{
     margin-top: 50px;
@@ -133,10 +304,47 @@ a {
   margin-left: 70px;
   margin-top: 30px;
 }
+/*Education */
+
+
+.education{
+  background: linear-gradient(90deg,#0ea5e9,#7e22ce);
+  background-clip: text;
+  color: transparent;
+  
+  border-bottom: 5px solid rgb(132, 132, 240);
+  font-size: 40px;
+  padding: 10px;
+  font-weight: bold;
+  width: 200px;
+}
+.education-card{
+  background-color: rgb(30, 41, 59);
+  
+  height: 250px;
+  border-radius: 10px;
+  text-align: start;
+  align-content: center;
+  color: white;
+  padding-left: 40px;
+ 
+}
+.education-card:hover {
+   box-shadow:8px 8px  20px rgba(81, 72, 197, 0.3);
+
+    }
+.year{
+  background: linear-gradient(90deg,rgba(14, 165, 233, 1) 0%, rgba(126, 34, 206, 1) 52%);
+  background-clip: text;
+  color: transparent;
+}
 /* skill */
+.skill-section{
+  margin-top: 200px;
+}
 .my-skills{
   color: white;
-  margin-left: 700px;
+ 
   border-bottom: 5px solid rgb(132, 132, 240);
   font-size: 40px;
   padding: 10px;
@@ -151,8 +359,8 @@ a {
 }
 .skill{
   color: white;
-  display: grid;
-  grid-template-columns: 6fr 4fr;
+  
+  
   margin-top: 100px;
 }
 .percentage{
@@ -185,11 +393,7 @@ input{
   
 }
 /*Tools & Technologies */
- .tools{
-  color: white;
-  display: flex;
-  justify-content: space-around;
- }
+ 
  .tools-card{
   background-color: rgb(30, 41, 59);
   width: 220px;
@@ -207,23 +411,8 @@ footer{
   height: 100vh;
   margin-top: 200px;
 }
-.footer-header{
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: sans-serif;
-  border-bottom: 5px solid rgb(151, 151, 239);
-  margin-left: 700px;
-}
-.footer{
-  display: grid;
-  grid-template-columns: repeat(2,auto);
-  color: white;
-  margin-top: 50px;
-}
-.contact{
-  margin-left: 20px;
-}
+
+
 .location{
   display: flex;
   gap: 20px;
@@ -250,13 +439,4 @@ footer{
 textarea{
   border-radius: 10px;
   background-color: rgb(60, 60, 114);
-}
-.send-message{
-  width: 700px;
-  height: 50px;
-  border-radius: 30px;
-  background-color: rgb(76, 76, 199);
-  color: white;
-  font-size: 17px;
-  font-weight: bold;
 }
